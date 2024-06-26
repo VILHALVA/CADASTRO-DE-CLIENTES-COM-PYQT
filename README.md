@@ -8,32 +8,19 @@
 <img src="./IMAGENS/FOTO_5.png" align="center" width="500"> <br>
 
 ## DESCRIÇÃO:
-Esse projeto é uma aplicação de CRUD (Create, Read, Update, Delete) utilizando PyQt5 para a interface gráfica e SQLite como banco de dados. Vamos analisar as funcionalidades:
+Este aplicativo em PyQt5 com SQLite oferece um sistema de CRUD (Create, Read, Update, Delete) para gerenciamento de clientes. Aqui estão suas principais características:
 
-1. **Interface Gráfica Principal (`JanelaPrincipal`)**:
-   - **Configuração**: Define uma janela principal (`QMainWindow`) com um título, dimensões e uma conexão SQLite (`database.db`).
-   - **Widgets**: Utiliza layouts (`QVBoxLayout`, `QHBoxLayout`) para organizar os elementos na interface.
-   - **Botões**: Inclui botões para adicionar, editar e deletar registros.
-   - **Tabela de Dados**: Utiliza `QTableWidget` para exibir os registros do banco de dados em forma tabular.
-   - **Métodos**:
-     - `setup_ui()`: Configura a interface gráfica inicial.
-     - `criar_tabela()`: Cria a tabela `clientes` no banco de dados SQLite se não existir.
-     - `carregar_dados()`: Carrega os dados da tabela `clientes` para exibir na `QTableWidget`.
-     - `abrir_janela_adicionar()`: Abre uma janela de diálogo para adicionar um novo cliente.
-     - `inserir_registro()`: Insere um novo registro na tabela `clientes`.
-     - `editar_registro()`: Permite editar um registro existente ao selecionar um item na tabela.
-     - `atualizar_registro()`: Atualiza um registro na tabela `clientes`.
-     - `deletar_registro()`: Deleta um registro ao confirmar a exclusão por meio de uma caixa de diálogo.
-     - `closeEvent()`: Fecha a conexão com o banco de dados ao fechar a aplicação.
+1. **Cadastro de Clientes**:
+   - Permite adicionar novos clientes especificando nome, email e telefone através de uma interface gráfica intuitiva. Os dados dos clientes são armazenados em um banco de dados SQLite para persistência.
 
-2. **Janelas de Diálogo (`DialogoAdicionar` e `DialogoEditar`)**:
-   - **`DialogoAdicionar`**: Janela modal para adicionar um novo cliente. Inclui campos para nome, email e telefone.
-   - **`DialogoEditar`**: Derivado de `DialogoAdicionar`, permite editar os campos de um cliente existente ao inicializar com dados preenchidos.
+2. **Edição de Clientes**:
+   - Permite editar os dados de um cliente existente diretamente na tabela de clientes. Ao selecionar um cliente na tabela e clicar no botão "Editar", uma janela de diálogo permite fazer alterações nos campos de nome, email e telefone.
 
-3. **Execução da Aplicação**:
-   - Inicia a aplicação PyQt com `QApplication`.
-   - Cria uma instância de `JanelaPrincipal` e a exibe com `janela.show()`.
-   - Utiliza `sys.exit(app.exec_())` para iniciar o loop de eventos do PyQt.
+3. **Remoção de Clientes**:
+   - Permite excluir um cliente selecionado da lista. Após selecionar o cliente na tabela, clicando no botão "Apagar", uma caixa de diálogo de confirmação é exibida para garantir que a exclusão seja intencional.
+
+4. **Visualização de Clientes**:
+   - Todos os clientes cadastrados são exibidos em uma tabela com colunas para ID, Nome, Email e Telefone. Esta visualização facilita o acompanhamento e a gestão dos clientes registrados.
 
 ## EXECUTANDO O PROJETO: 
 1. **Instalação:**
@@ -49,11 +36,10 @@ Esse projeto é uma aplicação de CRUD (Create, Read, Update, Delete) utilizand
    python CODIGO.py
    ```
 
-3. **Interagindo com APP:**
-   - **Adicionar**: Clique no botão "Adicionar", preencha os campos na janela de diálogo e clique em "Ok".
-   - **Editar**: Selecione um registro na tabela e clique no botão "Editar". Faça as alterações na janela de diálogo que abrirá e clique em "Ok".
-   - **Deletar**: Selecione um registro na tabela e clique no botão "Deletar". Confirme a exclusão na caixa de diálogo que aparecerá.
-   - **Fechar Aplicação**: Ao fechar a aplicação, os dados serão salvos no banco de dados SQLite (`database.db`).
+3. **Interagindo com o Aplicativo**:
+   - **Adicionar**: Clique no botão "Adicionar", preencha os campos na janela de diálogo e clique em "Ok" para inserir um novo cliente na lista.
+   - **Editar**: Selecione um cliente na tabela e clique no botão "Editar". Faça as alterações desejadas na janela de diálogo que aparecerá e clique em "Ok" para atualizar os dados do cliente.
+   - **Deletar**: Selecione um cliente na tabela e clique no botão "Apagar". Confirme a exclusão na caixa de diálogo para remover o cliente do banco de dados.
 
 ## NÃO SABE?
 - Entendemos que para manipular arquivos em muitas linguagens e tecnologias, é necessário possuir conhecimento nessas áreas. Para auxiliar nesse aprendizado, oferecemos cursos gratuitos disponíveis:
