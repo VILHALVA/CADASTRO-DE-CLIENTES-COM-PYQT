@@ -24,10 +24,10 @@ Este aplicativo em PyQt5 com SQLite oferece um sistema de CRUD (Create, Read, Up
 
 ## EXECUTANDO O PROJETO: 
 1. **Instalação:**
-   Certifique-se de ter PyQt5 e SQLite instalados:
+   - Entre no diretório `CODIGO` e execute o comando:
 
    ```bash
-   pip install PyQt5
+   pip install -r requirements.txt
    ```
 
 2. **Iniciando o APP:**
