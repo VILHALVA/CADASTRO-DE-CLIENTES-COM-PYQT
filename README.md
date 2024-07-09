@@ -46,6 +46,7 @@ Este aplicativo em PyQt5 com SQLite oferece um sistema de CRUD (Create, Read, Up
 * [CURSO DE PYTHON](https://github.com/VILHALVA/CURSO-DE-PYTHON)
 * [CURSO DE PYQT](https://github.com/VILHALVA/CURSO-DE-PYQT)
 * [CURSO DE SQLITE](https://github.com/VILHALVA/CURSO-DE-SQLITE)
+* [CURSO DE PYTHON COM SQLITE](https://github.com/VILHALVA/CURSO-DE-PYTHON-COM-SQLITE)
 * [CONFIRA MAIS CURSOS](https://github.com/VILHALVA?tab=repositories&q=+topic:CURSO)
 
 ## CREDITOS:
